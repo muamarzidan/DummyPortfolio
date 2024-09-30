@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+        <!-- SWIPER -->
+        <link
+            rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+        />
+        <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+        <!-- CSS -->
+        <link rel="stylesheet" href="assets/css/style.css">
+
+        <title>Muziro</title>
+    </head>
+    <body>
+        <!-- HEADER -->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class=""></i> MuzirO
+                </a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skillss" class="nav__link">projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#skillss" class="nav__link">Projects</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
+
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
+
+                <div class="nav__btns">
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
+
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="main">
+            <!-- HOME -->
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/pp_remove.jpg" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Know me & <br> Connect with me
+                        </h1>
+                        <p class="home__description">
+                            Front end & UX Web Developer
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            explore about me<i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Me</span>
+                        <div class="home__social-links">
+                            <a href="https://www.instagram.com/muziroo" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-fill"></i>
+                            </a>
+                            <a href="https://youtube.com/@muzirocode?si=9_Dgsbqt00V2DZwG" target="_blank" class="home__social-link">
+                                <i class="ri-youtube-line"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/muamarzidan" target="_blank" class="home__social-link">
+                                <i class="ri-linkedin-fill"></i>
+                            </a>
+                            <a href="https://github.com/muamarzidan" target="_blank" class="home__social-link">
+                                <i class="ri-github-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SCRIPT SWIPER FOR ABOUT IMAGE -->
+            <script type="module">
+                import Swiper from 'https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.mjs';
+                const swiper = new Swiper('.mySwiper', {
+                    loop: true,
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: false,
+                    },
+                    pagination: false,
+                });
+            </script>
+            
+            <!-- ABOUT -->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <div class="swiper mySwiper about__img">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="assets/img/new4.png" alt="Image 1">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/new.png" alt="Image 2">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/new2.jpeg" alt="Image 3">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="assets/img/new3.jpg" alt="Image 4">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            About me
+                        </h2>
+
+                        <p class="about__description">
+                            Currently, I am focusing on and interested in the field of front-end web development, but I can also work in the scope of back-end web development.
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Active in organitations.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Love about design, perspective, and art.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Have a good communication and team work.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                Sometimes playing games
+                            </p>
+                        </div>
+
+                        <a href="#skills" class="about__button-link">
+                            explore more about me <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- skillsS -->
+            <section class="skills section container" id="skills">
+                <h2 class="section__title-center">
+                    Lets check about my skills
+                </h2>
+
+                <p class="skills__description">
+                    Here are some of the skills that I have, and I am still learning to improve them.
+                </p>
+
+                <div class="skills__container grid">
+                    <article class="skills__card">
+                        <img src="assets/img/html-5.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Proficient</h3>
+                        </button>
+                    </article>
+                    <article class="skills__card">
+                        <img src="assets/img/css-3.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Proficient</h3>
+                        </button>
+                    </article>
+                    <article class="skills__card">
+                        <img src="assets/img/js.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Competent</h3>
+                        </button>
+                    </article>
+                    <article class="skills__card">
+                        <img src="assets/img/html-5.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Advance Beginner</h3>
+                        </button>
+                    </article>
+                    <article class="skills__card">
+                        <img src="assets/img/html-5.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Advance Beginner</h3>
+                        </button>
+                    </article>
+                    <article class="skills__card">
+                        <img src="assets/img/html-5.png" alt="" class="skills__img">
+
+                        <h3 class="skills__title">Advance Beginner</h3>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!-- projects -->
+            <section class="projects section container" id="tech">
+                <div class="projects__bg">
+                    <h2 class="section__title-center projects__title">
+                        projects to start your <br> skins to fight
+                    </h2>
+
+                    <div class="projects__container grid">
+                        <div class="projects__card">
+                            <div class="projects__card-number">01</div>
+                            <h3 class="projects__card-title">Choose Skin</h3>
+                            <p class="projects__card-description">
+                                We have all kinds of skins for you to choose from.
+                            </p>
+                        </div>
+
+                        <div class="projects__card">
+                            <div class="projects__card-number">02</div>
+                            <h3 class="projects__card-title">Place an order</h3>
+                            <p class="projects__card-description">
+                                Once your order is set, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="projects__card">
+                            <div class="projects__card-number">03</div>
+                            <h3 class="projects__card-title">Get skins delivered</h3>
+                            <p class="projects__card-description">
+                                Our delivery process is easy & fast, you receive the skins and use it.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT -->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 888 777
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    user@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer section">
+            <div class="footer__containerr container">
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/muziroo" class="footer__social-link">
+                            <i class="ri-instagram-line"></i>
+                        </a>
+                        <a href="https://youtube.com/@muzirocode?si=9_Dgsbqt00V2DZwG" class="footer__social-link">
+                            <i class="ri-youtube-fill"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/muamarzidan" class="footer__social-link">
+                            <i class="ri-linkedin-fill"></i>
+                        </a>
+                        <a href="https://github.com/muamarzidan" class="footer__social-link">
+                            <i class="ri-github-fill"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; muziro. All rigths reserved</p>
+        </footer>
+        
+        <!-- SCROLL UP BUTTON -->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
+
+        <script src="assets/js/scrollreveal.min.js"></script>
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
