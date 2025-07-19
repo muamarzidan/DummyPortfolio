@@ -376,7 +376,7 @@ body.dark-theme{
 }
 
 .button:hover .button__icon{
-  transform: translateX(.25rem);
+  rotate: 45deg;
 }
 
 .button--flex{
@@ -386,7 +386,7 @@ body.dark-theme{
 }
 
 .button--flex:hover {
-  background-color: #ff1100;
+  background-color: #850900FF;
 }
 
 
